@@ -169,7 +169,9 @@ div {
 	padding: 10px;
 	position: relative;
 }
-
+script {
+	display: block;
+}
 
 /* item1 {
   grid-area: myArea;

@@ -154,14 +154,23 @@ div {
 .footer {
 	/* transform: rotate(00deg); */
 	width: 450px;
-	text-align: center;
+	height: 50px;
+	top: 28px;
+	/* background-color: white; */
 	background-color: white;
-	font-size: 10px;
-	text-align: center;
-	font-variant: none;
-	color: black;
+	font-size: 12px;
+	text-align: left;
+	color: #3a3a3a;
+	position: relative;
+	left: 8px;
+	font-variant: normal;
+	font-weight: normal;
+	border-radius: 4px;
+	padding: 10px;
 	position: relative;
 }
+
+
 /* item1 {
   grid-area: myArea;
 }

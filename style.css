@@ -89,16 +89,21 @@ div {
 }
 
 .splash_header {
+	overflow: hidden;
 	/* transform: rotate(-03deg); */
 	/* background-color: #d6fae8; */
-	background-color: white;
+	background-color: white; 
+	word-wrap: break-word; 
     height:100px;
-	width: 450px;
+	width: 470px;
     border-radius: 4px;
     position:relative;
-    padding: 10px;
-    font-size: 12px;    
-    text-align: justify;
+	padding: 0px;
+	padding-bottom: 10px;
+	/* padding-inline-end: 0px; */
+	padding-top: 0px;
+	font-size: 12px;    
+	text-align: justify;
     /* color: #3a3a3a; */
 	color: grey;
     z-index: 200;
@@ -107,15 +112,16 @@ div {
     left: 8px;
 	
 	font-variant: small-caps; 
+	font-variant: normal;
 	/* color: black; */
-	font-size: 30px;
+	/* font-size: 30px; */
 }
 .splash_header .splash_logo {
 	/* transform: rotate(00deg); */
 	display: block;
 	background-color: #d6fae8; 
-	height:90px;
-	width: 90px;
+	height:80px;
+	width: 80px;
     border-radius: 0px;
 	position:absolute;
     padding: 0px;
@@ -124,8 +130,8 @@ div {
     color: #3a3a3a;
     z-index: 100;
     right: 0;
-    top: 10px;
-    left: 8px
+    top: 5px;
+    left: 5px
 }
 .splash_contact {
 	/* transform: rotate(-03deg); */

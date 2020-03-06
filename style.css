@@ -54,7 +54,7 @@ div {
 	width: 450px;
 	/* min-width: var(--univ_wid); 
 	max-width: var(--univ_wid_max); */
-	height: 510px;
+	min-height: 710px;
     /* top: 26px; */
     left: var(--univ_left);
 	background-color: red;/*white;*/
@@ -104,13 +104,13 @@ div {
 }
 
 .splash_body .body_sub_bot {
-	top: 150px;
+	top: 550px;
 	transform: rotate(00deg);
 	left: 8px;
 	/* position: relative; */
 	padding: 10px;
 	width: 435px;
-	height: 350px;
+	min-height: 150px;
 	position: absolute;
 	text-align: left;	
 	border-radius: 4px;

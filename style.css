@@ -1,3 +1,18 @@
+:root {
+	--univ_div_padding: 5px;
+	--univ_top: 8px;
+	--univ_left: 8px;
+	--univ_wid: 450px; /* 45vw; */
+	--univ_wid_max: 600px;
+	--univ_ht: 80vh; 
+	--scndry_wid: 600px; 
+	--univ_font_sz: 12px;
+	--univ_border_color: black;
+	--univ_border_wid: 1px;
+	--univ_border_styl: solid;
+}
+
+
 body {
 	color: grey;
 	background-color: AntiqueWhite;
@@ -37,21 +52,34 @@ div {
 	/* left: 8px; */
 	/* padding: 12px; */
 	width: 450px;
-	height: 415px;
+	/* min-width: var(--univ_wid); 
+	max-width: var(--univ_wid_max); */
+	height: 510px;
     /* top: 26px; */
-    left: 8px;
-	background-color: white;
+    left: var(--univ_left);
+	background-color: red;/*white;*/
 	font-variant: normal;
 	font-weight: bold;
 	border-radius: 4px;
 	padding: 10px;
 	position: relative;
 }
+.splash_body .body_special_update{
+	top: 65px;
+	left: var(--univ_left);
+	min-height: 55px;
+	width: 435px;
+	border-radius: 4px;
+	position: absolute;
+	padding: 10px;
+	background-color: greenyellow;
+}
+
 .splash_body .body_sub_L {
 	line-height: 4px;
 	/* transform: rotate(00deg); */
-	top: 8px;
-	left: 10px; 
+	top: var(--univ_top);
+	left: var(--univ_left); 
 	/* position: relative; */
 	padding: 4px;
 	width: 210px;
@@ -64,8 +92,8 @@ div {
 .splash_body .body_sub_R {
 	line-height: 4px;
 	transform: rotate(00deg);
-	top: 8px;
-	right: 10px; 
+	top: var(--univ_top);
+	right: var(--univ_left); 
 	/* position: relative; */
 	padding: 4px;
 	width: 210px;
@@ -76,12 +104,12 @@ div {
 }
 
 .splash_body .body_sub_bot {
-	top: 65px;
+	top: 150px;
 	transform: rotate(00deg);
 	left: 8px;
 	/* position: relative; */
-	padding: 4px;
-	width: 444px;
+	padding: 10px;
+	width: 435px;
 	height: 350px;
 	position: absolute;
 	text-align: left;	

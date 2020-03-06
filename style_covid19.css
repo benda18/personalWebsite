@@ -1,9 +1,9 @@
 :root {
-    --univ_div_padding: 3px;
-	--univ_top: 8px;
+    --univ_div_padding: 0px;
+	--univ_top: 1px;
 	--univ_left: 8px;
 	--univ_wid: 600px; /* 45vw; */
-	--univ_wid_max: 600px;
+    --univ_wid_max: 100vw;
 	--univ_ht: 80vh; 
 	--scndry_wid: 600px; 
 	--univ_font_sz: 12px;
@@ -17,13 +17,15 @@ div {
     border-radius: 2px;
     background-color: gold;
     top: var(--univ_top);
-    width: var(--univ_wid);
+    min-height: 33px;
+    /* min-width: 100px; */
+    max-width: var(--univ_wid_max);
     text-overflow: ellipsis;
     overflow: visible;
 }
 
 body {
-    padding: var(--univ_div_padding);    
+    /* padding: var(--univ_div_padding);     */
     background-color: rgb(200, 200, 200);
     top: var(--univ_top);
 }
@@ -31,7 +33,7 @@ body {
 .header {
     
 	word-wrap: break-word; 
-    text-align: center;
+    text-align: left;
     color: darkblue;
     z-index: 200;
     font-variant: small-caps; 
@@ -41,6 +43,18 @@ body {
 }
 
 .body_cont {
-    height: 33px;
+    
     position: relative;
+}
+
+.topic {
+    background-color: darkred;
+    position: relative;
+    min-width: 400px;
+}
+.body_cont .topic .img_c {
+    width: 400px;
+    padding: 10px;
+    position: relative;
+    background-color: transparent;
 }

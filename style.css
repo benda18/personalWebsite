@@ -3,7 +3,7 @@
 	--univ_top: 8px;
 	--univ_left: 8px;
 	--univ_wid: 450px; /* 45vw; */
-	--univ_wid_max: 600px;
+	--univ_wid_max: 97vw;
 	--univ_ht: 80vh; 
 	--scndry_wid: 600px; 
 	--univ_font_sz: 12px;
@@ -123,7 +123,7 @@ div {
 	background-color: white; 
 	word-wrap: break-word; 
     height:100px;
-	width: 470px;
+	width: var(--univ_wid_max);
     border-radius: 4px;
     position:relative;
 	padding: 0px;
@@ -178,6 +178,22 @@ div {
 	color: grey;
 	/* padding: 0.5px; */
 	position: relative;
+}
+.splash_nav {
+	position: relative; 
+	width: var(--univ_wid_max);
+	height: 25px; 
+	padding: 4px; 
+	text-align: justify; 
+	text-indent: 40vw;
+	background-color: white;
+	font-size: 14px;
+	top: 15px; 
+	left: 8px;
+	line-height: 0px;
+	border-radius: 4px;
+	font-variant: none;
+	color: grey;
 }
 .footer {
 	/* transform: rotate(00deg); */

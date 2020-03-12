@@ -3,11 +3,12 @@
 	--univ_top: 8px;
 	--univ_left: 8px;
 	--univ_wid: 450px; /* 45vw; */
-	--univ_wid_max: 97vw;
+	--univ_wid_max: 80vw;
 	--univ_ht: 80vh; 
 	--scndry_wid: 600px; 
 	--univ_font_sz: 12px;
 	--univ_border_color: black;
+	--univ_bg_color: AntiqueWhite; 
 	--univ_border_wid: 1px;
 	--univ_border_styl: solid;
 }
@@ -15,38 +16,29 @@
 
 body {
 	color: grey;
-	background-color: AntiqueWhite;
-	height: 200px;	
+	background-color: var(--univ_bg_color);
+	background-color: lightblue;
+	/* height: 200px;	 */
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size: 14px;
+	/* font-size: 14px;
 	font-weight: normal;
 	font-variant: normal;
 	text-decoration: none;
-	text-transform: none;
-	text-align: justify;
-	transform: rotate(-00deg);
-	
+	text-transform: none; */
+	text-align: justify;	
 }
-h1 {
-	font-variant: small-caps;
-	color: grey;
-}
-h2 {
-	color: grey;
-}
-h3 {
-	color: grey;
-}
+
 div {
   display: block;
-  background-color: #d6fae8;
+  background-color: var(--univ_bg_color);
+  background-color: black;
 }
 
 .splash_body {
 	top: 21px; 
 	width: var(--univ_wid_max);
 	min-height: 710px;
-   left: var(--univ_left);
+	left: var(--univ_left);
 	background-color: red;/*white;*/
 	font-variant: normal;
 	font-weight: bold;

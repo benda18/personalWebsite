@@ -49,6 +49,7 @@ div {
 }
 .splash_body .body_special_update{
 	top: 65px;
+	top: var(--univ_top);
 	left: var(--univ_left);
 	min-height: 55px;
 	width: 435px;
@@ -156,7 +157,7 @@ div {
 .splash_nav {
 	position: relative; 
 	width: var(--univ_wid_max);
-	height: 25px; 
+	min-height: 25px; 
 	padding: var(--univ_div_padding);
 	text-align: justify; 
 	/* text-indent: 40vw; */
@@ -170,12 +171,30 @@ div {
 	font-variant: none;
 	color: grey;
 }
+.splash_nav .nav_sub {
+	position: relative;
+	margin: auto;
+	width: var(--univ_wid_max-2px);
+	min-height: 25px; 
+	padding: var(--univ_div_padding);
+	text-align: left; 
+	/* text-indent: 40vw; */
+	background-color: greenyellow;
+	
+	font-size: 14px;
+	/* top: 0px; 
+	left: 0px; */
+	/* line-height: 0px; */
+	border-radius: 4px;
+	font-variant: none;
+	color: grey;
+}
 .footer {
 	width: var(--univ_wid_max);
 	height: 50px;
 	top: 28px;
-	background-color: white;
-	background-color: var(--univ_bg_color);
+	/* background-color: white;
+	background-color: var(--univ_bg_color); */
 	font-size: 12px;
 	text-align: left;
 	color: #3a3a3a;

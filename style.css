@@ -159,7 +159,7 @@ div {
 	height: 25px; 
 	padding: var(--univ_div_padding);
 	text-align: justify; 
-	text-indent: 40vw;
+	/* text-indent: 40vw; */
 	background-color: white;
 	background-color: var(--univ_bg_color);
 	font-size: 14px;

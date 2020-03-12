@@ -29,12 +29,9 @@ body {
 }
 h1 {
 	font-variant: small-caps;
-	/* background-color: AntiqueWhite; */
 	color: grey;
-	/* font-size: 12px; */
 }
 h2 {
-	/* font-weight: bold; */
 	color: grey;
 }
 h3 {
@@ -46,17 +43,10 @@ div {
 }
 
 .splash_body {
-	/* transform: rotate(-03deg); */
-    /* right: 0px; */
 	top: 21px; 
-	/* left: 8px; */
-	/* padding: 12px; */
-	width: 1200px; /* 450px; */
-	/* min-width: var(--univ_wid); 
-	max-width: var(--univ_wid_max); */
+	width: var(--univ_wid_max);
 	min-height: 710px;
-    /* top: 26px; */
-    left: var(--univ_left);
+   left: var(--univ_left);
 	background-color: red;/*white;*/
 	font-variant: normal;
 	font-weight: bold;
@@ -77,10 +67,8 @@ div {
 
 .splash_body .body_sub_L {
 	line-height: 4px;
-	/* transform: rotate(00deg); */
 	top: var(--univ_top);
 	left: var(--univ_left); 
-	/* position: relative; */
 	padding: 4px;
 	width: 210px;
 	height: 40px;
@@ -94,7 +82,6 @@ div {
 	transform: rotate(00deg);
 	top: var(--univ_top);
 	right: var(--univ_left); 
-	/* position: relative; */
 	padding: 4px;
 	width: 210px;
 	height: 40px;
@@ -107,7 +94,6 @@ div {
 	top: 550px;
 	transform: rotate(00deg);
 	left: 8px;
-	/* position: relative; */
 	padding: 10px;
 	width: 435px; 
 	min-height: 150px;
@@ -118,8 +104,6 @@ div {
 
 .splash_header {
 	overflow: hidden;
-	/* transform: rotate(-03deg); */
-	/* background-color: #d6fae8; */
 	background-color: white; 
 	word-wrap: break-word; 
     height:100px;
@@ -128,24 +112,18 @@ div {
     position:relative;
 	padding: 0px;
 	padding-bottom: 10px;
-	/* padding-inline-end: 0px; */
 	padding-top: 0px;
 	font-size: 12px;    
 	text-align: justify;
-    /* color: #3a3a3a; */
-	color: rgb(200, 200, 200);
+    color: rgb(200, 200, 200);
     z-index: 200;
     right: 0;
     top: 10px;
     left: 8px;
-	
 	font-variant: small-caps; 
 	font-variant: normal;
-	/* color: black; */
-	/* font-size: 30px; */
 }
 .splash_header .splash_logo {
-	/* transform: rotate(00deg); */
 	display: block;
 	background-color: #d6fae8; 
 	height:80px;
@@ -162,7 +140,6 @@ div {
     left: 5px
 }
 .splash_contact {
-	/* transform: rotate(-03deg); */
 	width: 460px;
 	height: 25px;
 	padding: 4px;
@@ -176,7 +153,6 @@ div {
 	border-radius: 4px;
 	font-variant: none;
 	color: grey;
-	/* padding: 0.5px; */
 	position: relative;
 }
 .splash_nav {
@@ -196,11 +172,9 @@ div {
 	color: grey;
 }
 .footer {
-	/* transform: rotate(00deg); */
 	width: 450px;
 	height: 50px;
 	top: 28px;
-	/* background-color: white; */
 	background-color: white;
 	font-size: 12px;
 	text-align: left;
@@ -217,18 +191,3 @@ script {
 	display: block;
 }
 
-/* item1 {
-  grid-area: myArea;
-}
-.grid-container {
-  display: grid;
-  grid:
-    'myArea myArea . . .'
-    'myArea myArea . . .';
-}/* 
-
-/* Predefined color names include aqua, black, blue, 
-fuchsia, gray, green, lime, maroon, navy, olive, 
-purple, red, silver, teal, white, and yellow. 
-transparent is also a valid value. */ 
-/* on margins and padding nextlesson */

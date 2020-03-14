@@ -13,6 +13,23 @@
 	--univ_border_styl: solid;
 }
 
+h1 {
+	color: black;
+}
+h2 {
+	color: rgb(100, 100, 100); 
+	font-size: 16pt; 
+	font-style: normal;
+	font-variant-caps: small-caps;
+}
+h3 {
+	color: red;
+	font-size: 12pt;
+}
+h4 {
+	color: black;
+	font-size: 12pt;
+}
 
 body {
 	color: grey;
@@ -50,6 +67,11 @@ div {
 	/* padding: 10px; */
 	padding: var(--univ_div_padding);
 	position: relative;
+}
+
+.splash_body .resume {
+	background-color: var(--univ_bg_color);
+	
 }
 .splash_body .body_special_update{
 	top: 65px;

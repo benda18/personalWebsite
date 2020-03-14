@@ -26,6 +26,7 @@ body {
 	text-decoration: none;
 	text-transform: none; */
 	text-align: justify;	
+	position: relative;
 }
 
 div {
@@ -41,9 +42,10 @@ div {
 	width: var(--univ_wid_max);
 	min-height: 710px;
 	left: var(--univ_left);
-	background-color: red;/*white;*/
+	background-color: white;
 	font-variant: normal;
-	font-weight: bold;
+	text-align: justify;
+	/* font-weight: bold; */
 	border-radius: 4px;
 	/* padding: 10px; */
 	padding: var(--univ_div_padding);

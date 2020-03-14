@@ -21,14 +21,21 @@ h2 {
 	font-size: 16pt; 
 	font-style: normal;
 	font-variant-caps: small-caps;
+	text-indent: 0pt;
+	line-height: 12pt;
 }
 h3 {
 	color: red;
 	font-size: 12pt;
+	text-indent: 8pt;
+	line-height: 12pt;
+	font-style: italic;
 }
 h4 {
 	color: black;
 	font-size: 12pt;
+	text-indent: 8pt;
+	line-height: 0pt;
 }
 
 body {
@@ -71,7 +78,8 @@ div {
 
 .splash_body .resume {
 	background-color: var(--univ_bg_color);
-	
+	text-indent: 16pt;
+	line-height: 3pt;
 }
 .splash_body .body_special_update{
 	top: 65px;

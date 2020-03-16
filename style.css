@@ -78,7 +78,10 @@ div {
 	
 }
 
-
+.splash_body .headshot {
+	background-color: transparent;
+	position: relative;
+}
 .splash_body .body_special_update{
 	top: 65px;
 	top: var(--univ_top);

@@ -121,12 +121,15 @@ div {
 }
 
 .body_sub_bot {
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
 	background-color: var(--univ_bg_color);
 	bottom: 8px;
 	transform: rotate(00deg);
 	padding: 0px;
 	width: var(--univ_wid_max);
-	min-height: 150px;
+	min-height: 80px;
 	position: absolute;
 	text-align: left;	
 	border-radius: 4px;

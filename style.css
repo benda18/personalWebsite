@@ -64,7 +64,7 @@ div {
 .splash_body {
 	top: 21px; 
 	width: var(--univ_wid_max);
-	min-height: 710px;
+	min-height: 800px;
 	left: var(--univ_left);
 	background-color: white;
 	font-variant: normal;
@@ -74,13 +74,11 @@ div {
 	/* padding: 10px; */
 	padding: var(--univ_div_padding);
 	position: relative;
+	
+	
 }
 
-.splash_body .resume {
-	background-color: var(--univ_bg_color);
-	text-indent: 16pt;
-	line-height: 3pt;
-}
+
 .splash_body .body_special_update{
 	top: 65px;
 	top: var(--univ_top);

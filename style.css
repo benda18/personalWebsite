@@ -120,13 +120,12 @@ div {
 	border-radius: 4px;
 }
 
-.splash_body .body_sub_bot {
-	top: 550px;
+.body_sub_bot {
+	background-color: var(--univ_bg_color);
+	bottom: 8px;
 	transform: rotate(00deg);
-	left: 8px;
-	padding: 10px;
-	padding: var(--univ_div_padding);
-	width: 435px; 
+	padding: 0px;
+	width: var(--univ_wid_max);
 	min-height: 150px;
 	position: absolute;
 	text-align: left;	

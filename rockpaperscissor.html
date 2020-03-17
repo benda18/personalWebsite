@@ -57,9 +57,21 @@
             //var dsides = document.getElementById("d_sides").value;
             //var dsides_out = Math.floor(Math.random()*dsides)+1;
             //document.getElementById("roll_output").value = dsides_out; /* document.getElementById("field1").value; */
-            //document.getElementById("demo2").innerHTML = 3+1; 
+            if (my_hand == her_hand) {
+              document.getElementById("rps_ih2").value = "you tie";
+            }else if (my_hand == "rock" && her_hand == "scissors") {
+              document.getElementById("rps_ih2").value = "you win";
+            } else if (my_hand == "paper" && her_hand == "rock") {
+              document.getElementById("rps_ih2").value = "you win";
+            } else if (my_hand == "scissors" && her_hand == "paper") {
+              document.getElementById("rps_ih2").value = "you win";  
+            }else{
+              document.getElementById("rps_ih2").value = "you lose";
+            }
           } 
         </script>
+        <p id="rps_ih"></p>
+        <input type="text" id="rps_ih2" value = "">
         
      <!--  </div> -->
     

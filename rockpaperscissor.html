@@ -40,18 +40,23 @@
   
     
 <div class = "splash_body">
-  
+    
     <!-- <div class="footer"> -->
-        <h3>Dice Game</h3>
-        How many sides?: <input type="number" id="d_sides" value=6><br>
-        Dice roll result: <input type="number" id="roll_output" value=-1><br><br>
-        <button onclick="roll_the_dice()">Roll the Dice</button>
-        <p>A function is triggered when the button is clicked.</p>
-        <script class="scrd">
-          function roll_the_dice() {
-            var dsides = document.getElementById("d_sides").value;
-            var dsides_out = Math.floor(Math.random()*dsides)+1;
-            document.getElementById("roll_output").value = dsides_out; /* document.getElementById("field1").value; */
+        <h3>A Game of Rock-Paper-Scissors</h3>
+        Type your play: <input type="text" id="my_rps" value=""><br>
+        See her play: <input type="text" id="her_rps" value="???"><br><br>
+        <button onclick="rockPaperScissors()">Click to Play</button>
+        <p></p>
+        <script class="scr_rps">
+          function rockPaperScissors() {
+              var my_hand = document.getElementById("my_rps").value;
+              let a_hand = ['rock', 'paper', 'scissors'] ;
+              let a_num = Math.floor(Math.random()*3);
+              var her_hand = a_hand[a_num]; 
+              document.getElementById("her_rps").value = her_hand;
+            //var dsides = document.getElementById("d_sides").value;
+            //var dsides_out = Math.floor(Math.random()*dsides)+1;
+            //document.getElementById("roll_output").value = dsides_out; /* document.getElementById("field1").value; */
             //document.getElementById("demo2").innerHTML = 3+1; 
           } 
         </script>

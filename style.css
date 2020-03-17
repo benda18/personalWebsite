@@ -80,6 +80,13 @@ div {
 .scrd {
 	display: none;
 }
+.scr_rps {
+	display: none;
+}
+.canvas {
+	display: none;
+}
+
 .splash_body .headshot {
 	background-color: transparent;
 	position: relative;

@@ -28,12 +28,21 @@ h2 {
 	text-indent: 8pt;
 	/* line-height: 12pt; */
 	font-style: italic;
+	line-height: 6pt;
+}
+h3 {
+	font-size: 14pt; 
+	line-height: 6pt;
+	font-variant-caps: small-caps;
+	color: pink;
+	top: 0px;
+	bottom: 0px; 
 }
 h4 {
 	color: black;
 	font-size: 12pt;
 	text-indent: 8pt;
-	/* line-height: 0pt; */
+	line-height: 0pt; 
 }
 
 body {
@@ -123,6 +132,10 @@ div {
 	/* min-height: 30px; */
 }
 .splash_body {
+	position: relative;
+	padding-top: 0px;
+	top: 0px; 
+	margin-top: 0px;
 	background-color: var(--univ_bg_color);
 	max-width: var(--univ_wid_max);
 	min-width: var(--univ_wid_min);

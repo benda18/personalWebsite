@@ -42,13 +42,7 @@ h4 {
 body {
 	color: grey;
 	background-color: lightblue;
-	/* height: 200px;	 */
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	/* font-size: 14px;
-	font-weight: normal;
-	font-variant: normal;
-	text-decoration: none;
-	text-transform: none; */
 	text-align: justify;	
 	position: relative;	
 	right: var(--univ_left);
@@ -63,10 +57,8 @@ div {
 }
 
 .splash_body {
-	/* top: 21px;  */
 	top: var(--univ_top);
 	top: 0px;
-	/* width: var(--univ_wid_max); */
 	max-width: var(--univ_wid_max);
 	min-width: var(--univ_wid_min);
 	min-height: 200px;
@@ -75,9 +67,7 @@ div {
 	background-color: white;
 	font-variant: normal;
 	text-align: justify;
-	/* font-weight: bold; */
 	border-radius: 4px;
-	/* padding: 10px; */
 	padding-left: var(--univ_div_padding);
 	padding-right: var(--univ_div_padding);
 	padding-top: 0px;
@@ -104,18 +94,6 @@ div {
 	padding-left: 0px;
 
 }
-/* .splash_body .body_special_update{
-	top: var(--univ_top);
-	left: var(--univ_left);
-	right: var(--univ_left);
-	min-height: 55px;
-	max-width: var(--univ_wid_max);
-	min-width: var(--univ_wid_min);
-	border-radius: 4px;
-	position: absolute;
-	padding: var(--univ_div_padding);
-	background-color: greenyellow;
-} */
 
 .splash_body .body_sub_L {
 	line-height: 4px;
@@ -145,25 +123,6 @@ div {
 	border-radius: 4px;
 }
 
-/* .body_sub_bot {
-	white-space: nowrap;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
-	background-color: var(--univ_bg_color);
-	background-color: red;
-	bottom: 8px;
-	transform: rotate(00deg);
-	padding: 0px;
-	max-width: var(--univ_wid_max);
-	min-width: var(--univ_wid_min);
-	min-height: 80px;
-	position: relative;
-	text-align: left;	
-	border-radius: 4px;
-	
-	right: var(--univ_left);
-} */
-
 .splash_header {
 	overflow: hidden;
 	background-color: white; 
@@ -179,8 +138,6 @@ div {
 	font-size: 12px;    
 	text-align: justify;
     color: rgb(200, 200, 200);
-    z-index: 200;
-    /* right: 0; */
     top: 10px;
     left: 8px;
 	font-variant: small-caps; 
@@ -205,25 +162,6 @@ div {
     top: 5px;
     left: 5px
 }
-/* .splash_contact {
-	max-width: var(--univ_wid_max);
-	min-width: var(--univ_wid_min);
-	height: 25px;
-	padding: 4px;
-	padding: var(--univ_div_padding);
-	text-align: center;
-	background-color: white;
-	font-size: 14px;
-	top: 15px; 
-	left: 8px;	
-	right: var(--univ_left);
-	line-height: 0px;
-	text-align: center;
-	border-radius: 4px;
-	font-variant: none;
-	color: grey;
-	position: relative;
-} */
 .splash_nav {
 	position: relative; 
 	max-width: var(--univ_wid_max);
@@ -233,9 +171,7 @@ div {
 	padding-left: var(--univ_div_padding);
 	padding-top: 0px;
 	padding-bottom: 0px;
-	text-align: justify; 
-	/* text-indent: 40vw; */
-	
+	text-align: justify; 	
 	background-color: var(--univ_bg_color);
 	background-color: red;
 	font-size: 14px;
@@ -255,13 +191,8 @@ div {
 	min-height: 25px; 
 	padding: var(--univ_div_padding);
 	text-align: left; 
-	/* text-indent: 40vw; */
 	background-color: greenyellow;
-	
 	font-size: 14px;
-	/* top: 0px; 
-	left: 0px; */
-	/* line-height: 0px; */
 	border-radius: 4px;
 	font-variant: none;
 	color: grey;
@@ -272,7 +203,6 @@ div {
 	height: 50px;
 	top: 0px;
 	background-color: white;
-	/* background-color: var(--univ_bg_color); */
 	font-size: 12px;
 	text-align: left;
 	color: #3a3a3a;

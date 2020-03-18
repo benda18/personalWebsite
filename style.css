@@ -53,12 +53,14 @@ body {
 }
 
 div {
-	padding-left: 4px;
-	padding-right: 4px;
+	/* top: 10px; */
+	padding-left: 18px;
+	padding-right: 18px;
 	padding-top: 0px;
+	padding-bottom: 0px;
 	border-radius: 4px;
-	margin-left: 8px;
-	margin-right: 8px;
+	margin-left: 4px;
+	margin-right: 4px;
 	display: block;
   	background-color: var(--univ_bg_color);
   	background-color: black;
@@ -106,8 +108,9 @@ div {
 
 .splash_nav2 {
 	background-color: orange;
+	background-color: var(--univ_bg_color);
 	position:relative;
-	min-height: 30px;
+	/* min-height: 30px; */
 }
 .splash_body2 {
 	background-color: var(--univ_bg_color);
@@ -115,13 +118,18 @@ div {
 }
 
 .headshot2 {
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
 
 }
-
+script {
+	display: block;
+}
 
 /* ##################### */
 
-.splash_body {
+/* .splash_body {
 	top: var(--univ_top);
 	top: 0px;
 	max-width: var(--univ_wid_max);
@@ -285,3 +293,4 @@ script {
 	display: block;
 }
 
+ */

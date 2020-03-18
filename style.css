@@ -23,20 +23,20 @@ h2 {
 	font-style: normal;
 	font-variant-caps: small-caps;
 	text-indent: 0pt;
-	line-height: 12pt;
+	/* line-height: 12pt; */
 }
 h3 {
 	color: red;
 	font-size: 12pt;
 	text-indent: 8pt;
-	line-height: 12pt;
+	/* line-height: 12pt; */
 	font-style: italic;
 }
 h4 {
 	color: black;
 	font-size: 12pt;
 	text-indent: 8pt;
-	line-height: 0pt;
+	/* line-height: 0pt; */
 }
 
 body {
@@ -45,16 +45,81 @@ body {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	text-align: justify;	
 	position: relative;	
-	right: var(--univ_left);
+	/* right: var(--univ_left); */
+	/* margin-left: 8px;
+	margin-right: 8px;	 */
+	/* margin-top: 0px;
+	margin-bottom: 0px; */
 }
 
 div {
-	margin-left: auto;
-	margin-right: auto;	
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 0px;
+	border-radius: 4px;
+	margin-left: 8px;
+	margin-right: 8px;
 	display: block;
   	background-color: var(--univ_bg_color);
   	background-color: black;
 }
+
+.splash_header2 {
+    position:relative;
+	background-color: red;
+	overflow: hidden;
+	word-wrap: break-word; 
+    height:100px;
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
+	/* padding: var(--univ_div_padding);
+	padding-bottom: 10px;
+	padding-top: 0px; */
+	font-size: 12px;    
+	text-align: justify;
+    color: rgb(200, 200, 200);
+    /* top: 10px;
+    left: 8px; */
+	/* font-variant: small-caps;  */
+	font-variant: normal;	
+	/* right: var(--univ_left); */
+
+}
+
+.splash_logo2 {
+	background-color: greenyellow;
+	/* margin-left: 0px; */
+	/* display: block; */
+	height:80px;
+	width: 80px;
+    border-radius: 0px;
+	position: absolute;
+    padding: 0px;
+    font-size: 12px;    
+    text-align: justify;
+    color: #3a3a3a;
+    /* z-index: 100; */
+	/* right: var(--univ_left);
+    top: 5px;
+    left: 5px */
+}
+
+.splash_nav2 {
+	background-color: orange;
+	position:relative;
+	min-height: 30px;
+}
+.splash_body2 {
+	background-color: var(--univ_bg_color);
+
+}
+
+.headshot2 {
+
+}
+
+
+/* ##################### */
 
 .splash_body {
 	top: var(--univ_top);
@@ -73,10 +138,10 @@ div {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	position: relative;
-	bottom: 0px;
-	
-	
+	bottom: 0px;	
 }
+
+
 .scrd {
 	display: none;
 }
@@ -173,7 +238,7 @@ div {
 	padding-bottom: 0px;
 	text-align: justify; 	
 	background-color: var(--univ_bg_color);
-	background-color: red;
+	background-color: orange;
 	font-size: 14px;
 	top: 0px; 
 	left: 8px;

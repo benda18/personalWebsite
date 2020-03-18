@@ -48,7 +48,7 @@ body {
 	/* margin-top: 0px;
 	margin-bottom: 0px; */
 }
-.headshot2 img {
+.headshot img {
 	border-radius: 50%;
 }
 div {
@@ -65,7 +65,7 @@ div {
   	background-color: black;
 }
 
-.splash_header2 {
+.splash_header {
 	padding-left: 0px;
 	padding-right: 0px;
 	top: 8px; 
@@ -90,7 +90,7 @@ div {
 
 }
 
-.splash_logo2 {
+.splash_logo {
 	background-color: transparent;
 	/* margin-left: 0px; */
 	/* display: block; */
@@ -110,11 +110,11 @@ div {
     top: 5px;
     left: 5px */
 }
-.splash_logo2 img {
+.splash_logo img {
 	border-radius: 8px;
 }
 
-.splash_nav2 {
+.splash_nav {
 	background-color: orange;
 	background-color: var(--univ_bg_color);
 	position:relative;
@@ -122,13 +122,13 @@ div {
 	min-width: var(--univ_wid_min);
 	/* min-height: 30px; */
 }
-.splash_body2 {
+.splash_body {
 	background-color: var(--univ_bg_color);
 	max-width: var(--univ_wid_max);
 	min-width: var(--univ_wid_min);
 }
 
-.headshot2 {
+.headshot {
 	margin: 0px;
 	padding: 0px;
 	left: 0px;

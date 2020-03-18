@@ -41,7 +41,6 @@ h4 {
 
 body {
 	color: grey;
-	background-color: var(--univ_bg_color);
 	background-color: lightblue;
 	/* height: 200px;	 */
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -58,8 +57,7 @@ body {
 div {
 	margin-left: auto;
 	margin-right: auto;	
-	right: var(--univ_left);
-  	display: block;
+	display: block;
   	background-color: var(--univ_bg_color);
   	background-color: black;
 }
@@ -67,10 +65,11 @@ div {
 .splash_body {
 	/* top: 21px;  */
 	top: var(--univ_top);
+	top: 0px;
 	/* width: var(--univ_wid_max); */
 	max-width: var(--univ_wid_max);
 	min-width: var(--univ_wid_min);
-	min-height: 800px;
+	min-height: 200px;
 	left: var(--univ_left);
 	right: var(--univ_left);
 	background-color: white;
@@ -79,8 +78,12 @@ div {
 	/* font-weight: bold; */
 	border-radius: 4px;
 	/* padding: 10px; */
-	padding: var(--univ_div_padding);
+	padding-left: var(--univ_div_padding);
+	padding-right: var(--univ_div_padding);
+	padding-top: 0px;
+	padding-bottom: 0px;
 	position: relative;
+	bottom: 0px;
 	
 	
 }
@@ -97,6 +100,9 @@ div {
 .splash_body .headshot {
 	background-color: transparent;
 	position: relative;
+	left: 0px;
+	padding-left: 0px;
+
 }
 /* .splash_body .body_special_update{
 	top: var(--univ_top);
@@ -226,13 +232,16 @@ div {
 	padding-right: var(--univ_div_padding);
 	padding-left: var(--univ_div_padding);
 	padding-top: 0px;
+	padding-bottom: 0px;
 	text-align: justify; 
 	/* text-indent: 40vw; */
-	background-color: white;
+	
 	background-color: var(--univ_bg_color);
+	background-color: red;
 	font-size: 14px;
 	top: 0px; 
 	left: 8px;
+	bottom: 0px;
 	right: var(--univ_left);
 	line-height: 0px;
 	border-radius: 4px;
@@ -258,11 +267,12 @@ div {
 	color: grey;
 }
 .footer {
-	width: var(--univ_wid_max);
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
 	height: 50px;
-	top: 28px;
-	/* background-color: white;
-	background-color: var(--univ_bg_color); */
+	top: 0px;
+	background-color: white;
+	/* background-color: var(--univ_bg_color); */
 	font-size: 12px;
 	text-align: left;
 	color: #3a3a3a;

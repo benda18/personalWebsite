@@ -3,6 +3,7 @@
 	--univ_top: 8px;
 	--univ_left: 8px;
 	--univ_wid: 450px; /* 45vw; */
+	--univ_wid_min: 200px;
 	--univ_wid_max: 850px;
 	--univ_ht: 80vh; 
 	--scndry_wid: 600px; 
@@ -50,22 +51,27 @@ body {
 	text-decoration: none;
 	text-transform: none; */
 	text-align: justify;	
-	position: relative;
+	position: relative;	
+	right: var(--univ_left);
 }
 
 div {
 	margin-left: auto;
-	margin-right: auto;
-  display: block;
-  background-color: var(--univ_bg_color);
-  background-color: black;
+	margin-right: auto;	
+	right: var(--univ_left);
+  	display: block;
+  	background-color: var(--univ_bg_color);
+  	background-color: black;
 }
 
 .splash_body {
 	top: 21px; 
-	width: var(--univ_wid_max);
+	/* width: var(--univ_wid_max); */
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
 	min-height: 800px;
 	left: var(--univ_left);
+	right: var(--univ_left);
 	background-color: white;
 	font-variant: normal;
 	text-align: justify;
@@ -92,11 +98,13 @@ div {
 	position: relative;
 }
 .splash_body .body_special_update{
-	top: 65px;
+	/* top: 65px; */
 	top: var(--univ_top);
 	left: var(--univ_left);
+	right: var(--univ_left);
 	min-height: 55px;
-	width: 435px;
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
 	border-radius: 4px;
 	position: absolute;
 	padding: var(--univ_div_padding);
@@ -107,6 +115,7 @@ div {
 	line-height: 4px;
 	top: var(--univ_top);
 	left: var(--univ_left); 
+	right: var(--univ_left);
 	padding: 4px;
 	padding: var(--univ_div_padding);
 	width: 210px;
@@ -138,11 +147,14 @@ div {
 	bottom: 8px;
 	transform: rotate(00deg);
 	padding: 0px;
-	width: var(--univ_wid_max);
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
 	min-height: 80px;
 	position: absolute;
 	text-align: left;	
 	border-radius: 4px;
+	
+	right: var(--univ_left);
 }
 
 .splash_header {
@@ -150,10 +162,10 @@ div {
 	background-color: white; 
 	word-wrap: break-word; 
     height:100px;
-	width: var(--univ_wid_max);
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
     border-radius: 4px;
     position:relative;
-	padding: 0px;
 	padding: var(--univ_div_padding);
 	padding-bottom: 10px;
 	padding-top: 0px;
@@ -161,11 +173,12 @@ div {
 	text-align: justify;
     color: rgb(200, 200, 200);
     z-index: 200;
-    right: 0;
+    /* right: 0; */
     top: 10px;
     left: 8px;
 	font-variant: small-caps; 
-	font-variant: normal;
+	font-variant: normal;	
+	right: var(--univ_left);
 }
 .splash_header .splash_logo {
 	margin-left: 0px;
@@ -180,12 +193,14 @@ div {
     text-align: justify;
     color: #3a3a3a;
     z-index: 100;
-    right: 0;
+    
+	right: var(--univ_left);
     top: 5px;
     left: 5px
 }
-.splash_contact {
-	width: 460px;
+/* .splash_contact {
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
 	height: 25px;
 	padding: 4px;
 	padding: var(--univ_div_padding);
@@ -193,19 +208,23 @@ div {
 	background-color: white;
 	font-size: 14px;
 	top: 15px; 
-	left: 8px;
+	left: 8px;	
+	right: var(--univ_left);
 	line-height: 0px;
 	text-align: center;
 	border-radius: 4px;
 	font-variant: none;
 	color: grey;
 	position: relative;
-}
+} */
 .splash_nav {
 	position: relative; 
-	width: var(--univ_wid_max);
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
 	min-height: 25px; 
-	padding: var(--univ_div_padding);
+	padding-right: var(--univ_div_padding);
+	padding-left: var(--univ_div_padding);
+	padding-top: 0px;
 	text-align: justify; 
 	/* text-indent: 40vw; */
 	background-color: white;
@@ -213,6 +232,7 @@ div {
 	font-size: 14px;
 	top: 15px; 
 	left: 8px;
+	right: var(--univ_left);
 	line-height: 0px;
 	border-radius: 4px;
 	font-variant: none;
@@ -247,6 +267,7 @@ div {
 	color: #3a3a3a;
 	position: relative;
 	left: 8px;
+	right: var(--univ_left);
 	font-variant: normal;
 	font-weight: normal;
 	border-radius: 4px;

@@ -23,10 +23,7 @@ h2 {
 	font-style: normal;
 	font-variant-caps: small-caps;
 	text-indent: 0pt;
-	/* line-height: 12pt; */
-}
-h3 {
-	color: red;
+	/*top: 10px;olor: red;
 	font-size: 12pt;
 	text-indent: 8pt;
 	/* line-height: 12pt; */
@@ -51,7 +48,9 @@ body {
 	/* margin-top: 0px;
 	margin-bottom: 0px; */
 }
-
+.headshot2 img {
+	border-radius: 50%;
+}
 div {
 	/* top: 10px; */
 	padding-left: 18px;
@@ -67,11 +66,14 @@ div {
 }
 
 .splash_header2 {
+	padding-left: 0px;
+	padding-right: 0px;
+	top: 8px; 
     position:relative;
-	background-color: red;
+	background-color: var(--univ_bg_color);
 	overflow: hidden;
 	word-wrap: break-word; 
-    height:100px;
+    height:108px;
 	max-width: var(--univ_wid_max);
 	min-width: var(--univ_wid_min);
 	/* padding: var(--univ_div_padding);
@@ -89,15 +91,18 @@ div {
 }
 
 .splash_logo2 {
-	background-color: greenyellow;
+	background-color: transparent;
 	/* margin-left: 0px; */
 	/* display: block; */
+	left: 2px;
 	height:80px;
 	width: 80px;
     border-radius: 0px;
 	position: absolute;
     padding: 0px;
-    font-size: 12px;    
+	font-size: 12px;
+	top: 4px; 
+	bottom: 4px;   
     text-align: justify;
     color: #3a3a3a;
     /* z-index: 100; */
@@ -105,16 +110,22 @@ div {
     top: 5px;
     left: 5px */
 }
+.splash_logo2 img {
+	border-radius: 8px;
+}
 
 .splash_nav2 {
 	background-color: orange;
 	background-color: var(--univ_bg_color);
 	position:relative;
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
 	/* min-height: 30px; */
 }
 .splash_body2 {
 	background-color: var(--univ_bg_color);
-
+	max-width: var(--univ_wid_max);
+	min-width: var(--univ_wid_min);
 }
 
 .headshot2 {

@@ -170,6 +170,15 @@ div {
 	left: 0px;
 
 }
+
+.game {
+	background-color: var(--univ_bg_color);
+}
+
+.game img {
+	border-radius: 50%;
+	background-color: yellow;
+}
 .scrd {
 	display: none;
 }

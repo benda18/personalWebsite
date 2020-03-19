@@ -176,8 +176,8 @@ div {
 }
 
 .game img {
-	border-radius: 50%;
-	background-color: yellow;
+	border-radius: 0%;
+	background-color: transparent;
 }
 .scrd {
 	display: none;

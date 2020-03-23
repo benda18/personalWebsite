@@ -42,22 +42,34 @@
             format has evolved to become the backgone of sharing schedling info not only with app developers but also
             for the sharing of scheduling data between technology systems within transit authorities themselves (i.e.
             between CAD-AVL systems and digital headsigns. </p>
-            <p><div class="gtfs"><img src="gtfs_stops.png" ALIGN="left" HSPACE="0" VSPACE="0">
+        <p>
+            <div class="gtfs">
+                <img src="gtfs_stops.png" ALIGN="left" HSPACE="0" VSPACE="0">
             </div>
-            <h4>Transit Stops are the Foundation</h4>
-            Transit stops are the foundation of the feed. They are where passengers interface with the
-                transportation
-                network. Stop info is stored and accessed from <a
-                    href="https://developers.google.com/transit/gtfs/reference#stopstxt">stops.txt</a>.
-                    Unlike the network for private automobiles which can be accessed anywhere, anytime by anyone,
-                transit users are burdened by the need to arrive at a pre-definied stop at a specific time to catch a
-                ride. In the GTFS feed, everything revolves around transit stop location.
+            <h4>Transit Stops are the Foundation of the Feed</h4>
+            Transit stops are the foundation of the feed. They are where passengers interface with the transportation
+            network. Stop info is stored and accessed from <a
+                href="https://developers.google.com/transit/gtfs/reference#stopstxt">stops.txt</a>.
+            Unlike the network for private automobiles which can be accessed anywhere, anytime by anyone,
+            transit users are burdened by the need to arrive at a pre-definied stop at a specific time to catch a
+            ride. In the GTFS feed, everything revolves around transit stop location.
         </p>
-        <h4>Stop-Level Arrival Time</h4>
+        <div class="gtfs">
+            <img src="gtfs_stoptimes.png" ALIGN="left" HSPACE="0" VSPACE="0">
+        </div>
+            <h4>Stop-Level Arrival Time</h4>
+        <p>Knowing the transit stop locations alone isn't enough info for most transit riders because most services run
+            on an infrequent and/or a dynamic schedule based on the time-of-day and day-of-week. Therefore, the feed
+            needs to convey when every transit vehicle will arrive at any particular stop location. This information is
+            found in
+            <a href="https://developers.google.com/transit/gtfs/reference#stop_timestxt">stop_times.txt</a>.
+            Stop_times.txt is the largest file in most feeds because it represents the geo-temporal location of every
+            vehcile at every point in time throughout an entire transit week. With a simple data join of longitude and
+            latitude coordinates from stops.txt to stop_times.txt, you can produce an animation of vehicle movements
+            throughout a transit network based on time-of-day. </p>
         <h4>Route information</h4>
-        <p>Knowing the transit stop locaitons alone isn't enough info for most transit riders because most services run
-            on an infrequent and/or a dynamic schedule based on the time-of-day and day-of-week.</p>
-        <h4>Calendar Information</h4>    
+
+        <h4>Calendar Information</h4>
     </div>
 
 </body>

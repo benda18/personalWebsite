@@ -41,7 +41,7 @@ h3 {
 h4 {
 	color: black;
 	font-size: 12pt;
-	text-indent: 8pt;
+	/* text-indent: 8pt; */
 	line-height: 0pt; 
 }
 

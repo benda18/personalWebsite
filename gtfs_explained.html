@@ -48,7 +48,7 @@
                 <h4>Transit Stops are the Foundation of the Feed</h4>
                 <img src="gtfs_stops.png" ALIGN="left" HSPACE="0" VSPACE="0">
             </div>
-            
+
             Transit stops are the foundation of the feed. They are where passengers interface with the transportation
             network. Stop info is stored and accessed from <a
                 href="https://developers.google.com/transit/gtfs/reference#stopstxt">stops.txt</a>.
@@ -59,7 +59,7 @@
         <div class="gtfs">
             <h4>Stop-Level Arrival Times</h4>
             <img src="gtfs_stoptimes.gif" ALIGN="left" HSPACE="0" VSPACE="0" , height=125>
-        </div>        
+        </div>
         <p>Knowing the transit stop locations alone isn't enough info for most transit riders because most services run
             on an infrequent and/or a dynamic schedule based on the time-of-day and day-of-week. Therefore, the feed
             needs to convey when every transit vehicle will arrive at any particular stop location. This information is
@@ -70,7 +70,13 @@
             stops.txt you can show how vehicles travel throughout a transit day, but you're still missing lots of
             information: what routes visit which stops, how Monday service differs from Sunday service, transfer
             locations, and much more.<br><br></p>
-        <h4>Route information</h4>
+        <div class="gtfs">
+            <h4>Route information</h4>
+            <img src="gtfs_routes.png" ALIGN="left" HSPACE="0" VSPACE="0" , height=125>
+        </div>
+            <p>The next level of information that gets integrated into the feed is information about individual routes.
+                <a href="https://developers.google.com/transit/gtfs/reference#routestxt">Routes.txt</a> assigns a specific route name with each trip.  </p>
+        
 
         <h4>Calendar Information</h4>
     </div>

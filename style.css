@@ -171,6 +171,18 @@ div {
 
 }
 
+.gtfs {
+	margin: 0xp;
+	padding: 0px; 
+	position: relative;
+
+}
+.gtfs img {
+	position: relative;
+	padding-right: 8px;
+	padding-bottom: 8px;
+	
+}
 .game {
 	background-color: var(--univ_bg_color);
 }

@@ -40,9 +40,9 @@
     
     <!-- <div class="footer"> -->
         <h3>A Game of Rock-Paper-Scissors</h3>
-        Type your play: <input type="text" id="my_rps" value="">    
+        Type your play:<input type="text" id="my_rps" size = "25" value="">  
         <button onclick="rockPaperScissors()">Click to Play</button><br>
-        See her play: <input type="text" id="her_rps" value="???"><br>
+        See her play: <input type="text" id="her_rps" size = "25" value="???"><br>
         <p></p>
         <script class="scr_rps">
           function rockPaperScissors() {
@@ -58,6 +58,8 @@
               document.getElementById("rps_ih2").value = "you tie";
             }else if (my_hand == "rock" && her_hand == "scissors") {
               document.getElementById("rps_ih2").value = "you win";
+            }else if (my_hand == "fiber") {
+              document.getElementById("rps_ih2").value = "¯\\_(ツ)_/¯ white bread you're dead";
             } else if (my_hand == "paper" && her_hand == "rock") {
               document.getElementById("rps_ih2").value = "you win";
             } else if (my_hand == "scissors" && her_hand == "paper") {
@@ -68,7 +70,7 @@
           } 
         </script>
         <p id="rps_ih"></p>
-        Match Outcome: <input type="text" id="rps_ih2" value = "">
+        Match Outcome: <input type="text" id="rps_ih2" size = "25" value = "">
         
      <!--  </div> -->
     

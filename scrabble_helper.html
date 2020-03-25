@@ -55,7 +55,6 @@
             function find_scrab_words() {
                 var twl06 = ["aa", "aah", "aahed", "aahing", "aahs", "aal", "aalii", "aaliis", "aals", "aardvark", "aardvarks", "aardwolf", "aardwolves", "aargh", "aarrgh", "aarrghh", "aas", "aasvogel", "aasvogels", "ab", "aba", "abaca", "abacas", "abaci", "aback", "abacterial", "abacus", "abacuses", "abaft", "abaka", "abakas", "abalone", "abalones", "abamp", "abampere", "abamperes", "abamps", "abandon", "abandoned", "abandoner", "abandoners", "abandoning", "abandonment", "abandonments", "abandons", "abapical", "abas", "abase", "abased", "abasedly", "abasement", "abasements", "abaser", "abasers", "abases", "abash", "abashed", "abashedly", "abashes", "abashing", "abashment", "abashments", "abasia", "abasias", "abasing", "abatable", "abate", "abated", "abatement", "abatements", "abater", "abaters", "abates", "abating", "abatis", "abatises", "abator", "abators", "abattis", "abattises", "abattoir", "abattoirs", "abaxial", "abaxile", "abaya", "abayas", "abba", "abbacies", "abbacy", "abbas", "abbatial", "abbe", "abbes", "abbess", "abbesses", "abbey", "abbeys", "abbot", "abbotcies", "abbotcy"]
                 var input_letters = document.getElementById("input_ltrs").value;
-
                 //STEP 1: REDUCE ARRAY BASED ON CONTAINING ANY input_letters
                 // ~create array of input letters
                 var filtered_twl06 = new Array(null);
@@ -70,12 +69,11 @@
                         }
                     }
                 }
-                
-                //STEP 2: REDUCE ARRAY BASED ON CONTAINING LETTERS NOT IN input_letters
                 document.write(filtered_twl06);
 
+                //STEP 2: REDUCE ARRAY BASED ON LETTERS ONLY IN input_letters;
+                
                 //document.write(has_ltr.indexOf("f"));
-
                 //var input_ltr_array = input_letters.split("");
                 //document.write(input_ltr_array + "|||\n\n");
                 // ~remove duplicates (at some point in future)
@@ -97,12 +95,8 @@
                     document.write(l_word_begins_with + "\n\n");
                     //if (l_word_begins_with %in% input_ltr_array)
                 }  */
-
                 //var twl06_filtered = NA;
                 //document.write(input_ltr_array);
-
-
-
                 //var output_letters = input_letters;
                 //document.getElementById("output_ltrs").value = output_letters;
 

@@ -45,16 +45,32 @@
         <h3>Scrabble Helper</h3>
         <p>Input the letters you have, and any letters you want to play off, and this script will return all words from
             the Scrabble Tournament Word List (TWL06) that can be played by those letters. </p>
-        How many sides?: <input type="number" id="d_sides" value=6><br>
-        Dice roll result: <input type="text" id="roll_output" value="???"><br><br>
-        <button onclick="roll_the_dice()">Roll the Dice</button>
+        Input Your Letters: <input type="text" id="scrb_ltrs" value="eftng"><br>
+        <!-- Dice roll result: <input type="text" id="roll_output" value="???"><br><br> -->
+        <button onclick="find_scrab_words()">Find some words</button>
 
-        <script class="scrd">
-            function roll_the_dice() {
-                var dsides = document.getElementById("d_sides").value;
-                var dsides_out = Math.floor(Math.random() * dsides) + 1;
-                document.getElementById("roll_output").value = dsides_out; /* document.getElementById("field1").value; */
-                //document.getElementById("demo2").innerHTML = 3+1; 
+        <script type="text/javascript">
+            var allText =[];
+            var allTextLines = [];
+            var Lines = [];
+        
+            var txtFile = new XMLHttpRequest();
+            txtFile.open("GET", "https://www.wordgamedictionary.com/twl06/download/twl06.txt", true);
+            txtFile.onreadystatechange = function()
+            {
+                allText = txtFile.responseText;
+                allTextLines = allText.split(/\r\n|\n/);
+            };
+        
+            document.write(allTextLines);<br>
+            document.write(allText);<br>
+            document.write(txtFile);<br>
+        </script>
+
+        <script class="scrb_ltrs_scr">
+            function find_scrab_words() {
+                document.write("foo")
+                /* document.getElementById("demo2").innerHTML = 3+1;  */
             } 
         </script>
 </body>

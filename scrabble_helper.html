@@ -64,7 +64,22 @@
                 
                 //STEP 1: REDUCE ARRAY BASED ON FIRST LETTER IN inpu_letters
                 // ~create array of input letters
+                var temp_words = ["fee", "fi", "fo", "fum", "foo", "bar"];
+                var temp_words = twl06;
+                for (i = 0; i < temp_words.length; i++) {
+                    var first_ltr = temp_words[i].charAt(3);
+                    var first_ltr = temp_words[i].indexOf("f");
+                    if(first_ltr >= 0) {
+                        //document.write(first_ltr + " ||| ");
+                        document.write(temp_words[i] + " ||| ");
+                    }
+                    
+                }
+                
+                //document.write(first_ltr.indexOf("f"));
+               
                 var input_ltr_array = input_letters.split("");
+                //document.write(input_ltr_array + "|||\n\n");
                 // ~remove duplicates (at some point in future)
                 // ~loop through twl06
                 /* for (var i = 0; i < input_ltr_array.length; i++) {
@@ -76,8 +91,6 @@
                         }
                     }
                 } */
-
-
                 /* for (var i = 0; i < twl06.length; i++) {
                     // ~create array of twl06 words that begin with any of the input letters
                     var l_word = twl06[i];
@@ -88,7 +101,6 @@
                 }  */
                 
                 //var twl06_filtered = NA;
-
                 //document.write(input_ltr_array);
 
 

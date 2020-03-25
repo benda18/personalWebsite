@@ -58,20 +58,21 @@
                 
                 //STEP 1: REDUCE ARRAY BASED ON FIRST LETTER IN inpu_letters
                 // ~create array of input letters
-                var temp_words = ["fee", "fi", "fo", "fum", "foo", "bar"];
+                //var temp_words = ["fee", "fi", "fo", "fum", "foo", "bar"];
                 var temp_words = twl06;
-                var filtered_twl06 = ""; 
+                var filtered_twl06 = new Array(null); 
                 for (i = 0; i < temp_words.length; i++) {
                     var first_ltr = temp_words[i].charAt(3);
-                    var first_ltr = temp_words[i].indexOf("f");
+                    var first_ltr = temp_words[i].indexOf("a");
                     if(first_ltr >= 0) {
                         //document.write(first_ltr + " ||| ");
-                        filtered_twl06 = filtered_twl06.concat(temp_words[i]);
-                        document.write(filtered_twl06.concat(temp_words[i]) + " ||| ");
-                    }
-                    
+                        //filtered_twl06 = filtered_twl06.push(temp_words[i]);
+                        filtered_twl06[filtered_twl06.length] = temp_words[i];
+                        //document.write(filtered_twl06.concat(temp_words[i]) + " ||| ");
+                    }   
                 } 
-                
+                //document.write(twl06.length + "........");
+                document.write(filtered_twl06);
                 
                 //document.write(first_ltr.indexOf("f"));
                

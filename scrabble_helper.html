@@ -72,7 +72,14 @@
                 //document.write(filtered_twl06);
 
                 //STEP 2: REDUCE ARRAY BASED ON LETTERS ONLY IN input_letters;
-                var abcs = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+               var an_arr = ["a", "b", "c", "z", "f"];
+               var another_arr = ["z", "g"];
+
+               var io_ar12 = an_arr.indexOf(another_arr[0]);
+               document.write(io_ar12);
+               
+               
+                /*  var abcs = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
                 var not_abcs = new Array(null);
                 for (i = 0; i < abcs.length; i++) {
                     for (n = 0; n < input_letters.length; n++) {
@@ -82,14 +89,13 @@
                         }
                         //var in_abc = input_letters[i].indexOf(abcs[n])
                         //document.write(in_abc + " || ")
-                        /* if(in_abc < 0) {
+                        //if(in_abc < 0) {
                             
-                        } */
-                    }
-                    
+                        } 
+                    }                    
                 }
                 var distinctNotAbcs = [...new Set(not_abcs)];
-                document.write(distinctNotAbcs + "");
+                document.write(distinctNotAbcs + ""); */
 
             } 
         </script>

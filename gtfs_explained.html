@@ -45,16 +45,12 @@
             between CAD-AVL systems and digital headsigns.<br><br></p>
         <p>
             <div class="gtfs">
-                <h4>The GTFS feed shows where and when vehicles arrive at stops</h4>
-                <img src="gtfs_stops.png" ALIGN="left" HSPACE="0" VSPACE="0">
-            </div>
-
-            Transit stops are the foundation of the feed. They are where passengers interface with the transportation
-            network. Stop info is stored and accessed from <a
-                href="https://developers.google.com/transit/gtfs/reference#stopstxt">stops.txt</a>.
-            Unlike the network for private automobiles which can be accessed anywhere, anytime by anyone,
-            transit users are burdened by the need to arrive at a pre-definied stop at a specific time to catch a
-            ride. In the GTFS feed, everything revolves around transit stop location.<br><br>
+                <h4>At a Basic Level GTFS Shows Where and When Vehicles Are Located</h4>
+                <a href="gtfs_stoptimes_large.png"><img src="gtfs_stoptimes_small.png" ALIGN="left" HSPACE="0"
+                        VSPACE="0"></a>
+            </div>Transit vehicle location both sptially and temporally are the basis of the feed. <a
+                href="https://developers.google.com/transit/gtfs/reference#stopstxt">stop_times.txt</a> holds this base
+            data.<br><br><br><br><br><br>
         </p>
         <p>
             <div class="gtfs">
@@ -85,14 +81,15 @@
             locations, and much more.<br><br></p>
         <div class="gtfs">
             <h4>Route information</h4>
-            <img src="gtfs_routes.png" ALIGN="left" HSPACE="0" VSPACE="0" , height=125>
+            <a href="gtfs_routes.png"><img src="gtfs_routes.png" ALIGN="left" HSPACE="0" VSPACE="0" , height=125></a>
         </div>
         <p>The next level of information that gets integrated into the feed is information about individual routes.
             <a href="https://developers.google.com/transit/gtfs/reference#routestxt">Routes.txt</a> assigns a specific
-            route name with each trip. </p>
-
-
+            route name with each trip. </p><br><br><br><br>
         <h4>Calendar Information</h4>
+        <p>So far, we've deconstructed the feed based on time-of-day. The next step is to break out feed data based on
+            the day of week because service patterns vary typically on weekdays, weekends and holidays. Data 
+        is stored in <a href="https://developers.google.com/transit/gtfs/reference#calendartxt">calendar.txt</a></p>
     </div>
 
 </body>

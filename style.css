@@ -68,10 +68,12 @@ body {
 	padding: 2px; 
 	padding-left: 4px;
 	padding-right: 4px;
-	margin-left: 0px;
 	margin-right: auto;
-	max-width: 350px;
+	margin-left: auto;
+	max-width: 550px;
 	border-width: 0px;
+	height: 100px; 
+	overflow-y: scroll;
 	border-style: solid;
 	border-color: darkgray;
 	border-radius: 8px;

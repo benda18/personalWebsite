@@ -37,54 +37,51 @@
   
     
 <div class = "splash_body">
-    
-    <!-- <div class="footer"> -->
         <h3>A Game of Rock-Paper-Scissors</h3>
-        Type your play:<input type="text" id="my_rps" size = "25" value="">  
-        <button onclick="rockPaperScissors()">Click to Play</button><br>
-        See her play: <input type="text" id="her_rps" size = "25" value="???"><br>
-        <p></p>
-        <script class="scr_rps">
-          function rockPaperScissors() {
-              var my_hand = document.getElementById("my_rps").value;
-              let a_hand = ['rock', 'paper', 'scissors'] ;
-              let a_num = Math.floor(Math.random()*3);
-              var her_hand = a_hand[a_num]; 
-              document.getElementById("her_rps").value = her_hand;
-            //var dsides = document.getElementById("d_sides").value;
-            //var dsides_out = Math.floor(Math.random()*dsides)+1;
-            //document.getElementById("roll_output").value = dsides_out; /* document.getElementById("field1").value; */
-            if (my_hand == her_hand) {
-              document.getElementById("rps_ih2").value = "you tie";
-            }else if (my_hand == "rock" && her_hand == "scissors") {
-              document.getElementById("rps_ih2").value = "you win";
-            }else if (my_hand == "fiber") {
-              document.getElementById("rps_ih2").value = "white bread you're dead";
-            } else if (my_hand == "paper" && her_hand == "rock") {
-              document.getElementById("rps_ih2").value = "you win";
-            } else if (my_hand == "scissors" && her_hand == "paper") {
-              document.getElementById("rps_ih2").value = "you win";  
-            }else{
-              document.getElementById("rps_ih2").value = "you lose";
-            }
-          } 
-        </script>
-        <p id="rps_ih"></p>
-        Match Outcome: <input type="text" id="rps_ih2" size = "25" value = "">
         
-     <!--  </div> -->
-    
-  
-   
-  <!-- <div class="body_special_update">
-    coronavirus
-    <img src="world_map.png" height="" width="435">
-  </div> -->
-  <!-- <div class = "body_sub_bot"> 
-	<h2>Special Update</h2>
-	<p>Some amount of text talking 
-	    about some kind of topic etc.</p>
-  </div> -->
+        <div class="container">
+          The game of Sudoku 
+          <div class="sudo_area">
+            areas A (of A:F)
+            <div class="sudo">
+              cell 1 of 9
+
+            </div>
+          </div>
+          <!-- Type your play:<input type="text" id="my_rps" size = "25" value="">  
+          <button onclick="rockPaperScissors()">Click to Play</button><br>
+          See her play: <input type="text" id="her_rps" size = "25" value="???"><br>
+          <p></p>
+          <script class="scr_rps">
+            function rockPaperScissors() {
+                var my_hand = document.getElementById("my_rps").value;
+                let a_hand = ['rock', 'paper', 'scissors'] ;
+                let a_num = Math.floor(Math.random()*3);
+                var her_hand = a_hand[a_num]; 
+                document.getElementById("her_rps").value = her_hand;
+              //var dsides = document.getElementById("d_sides").value;
+              //var dsides_out = Math.floor(Math.random()*dsides)+1;
+              //document.getElementById("roll_output").value = dsides_out; /* document.getElementById("field1").value; */
+              if (my_hand == her_hand) {
+                document.getElementById("rps_ih2").value = "you tie";
+              }else if (my_hand == "rock" && her_hand == "scissors") {
+                document.getElementById("rps_ih2").value = "you win";
+              }else if (my_hand == "fiber") {
+                document.getElementById("rps_ih2").value = "white bread you're dead";
+              } else if (my_hand == "paper" && her_hand == "rock") {
+                document.getElementById("rps_ih2").value = "you win";
+              } else if (my_hand == "scissors" && her_hand == "paper") {
+                document.getElementById("rps_ih2").value = "you win";  
+              }else{
+                document.getElementById("rps_ih2").value = "you lose";
+              }
+            } 
+          </script>
+          <p id="rps_ih"></p>
+          Match Outcome: <input type="text" id="rps_ih2" size = "25" value = ""> -->
+        </div>
+        
+        
 </div>
 
 <div class = "footer">

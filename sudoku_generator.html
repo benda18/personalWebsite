@@ -1,68 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>SUDOKU GENERATOR</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- EVERYTHING GOES IN A DIV CONTAINER -->
-
-
-    <div class="splash_header">
-        <div class="splash_logo">
-            <a href="default.html">
-                <img src="logo.png" , width="100" , height="100">
-            </a>
-        </div>
-        <script id="demo2">
-            var my_text = "SudokuGenerator";
-            document.getElementById("demo2").innerHTML = my_text.repeat(200);
-        </script>
-        <p id="demo"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style_sd.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+  <div class="play-area">
+    <div id="block_0" class="block"></div>
+    <div id="block_1" class="block"></div>
+    <div id="block_2" class="block"></div>
+    <div id="block_3" class="block"></div>
+    <div id="block_4" class="block"></div>
+    <div id="block_5" class="block"></div>
+    <div id="block_6" class="block"></div>
+    <div id="block_7" class="block"></div>
+    <div id="block_8" class="block"></div>
+  </div>
+  <!-- REST OF THE CODE -->
+  <h2 id="winner"></h2>
+  <button onclick="reset_board()">RESET BOARD</button>
     </div>
-
-    <div class="splash_nav">
-        <p>
-            <a href="benderServices.html">Services</a>
-            <a href="benderResume.html">Resume</a>
-            <a href="benderPortfolio.html">Portfolio</a>
-            <a href="https://www.linkedin.com/in/tim-bender-238870171/"><img src="LI-In-Bug.png" , height="17"></a>
-            <a href="myemail.png"><img src="email_logo.png" , height="17"></a>
-            <a href="myphone.png"><img src="phone_icon.png" , height="17"></a>
-            <a href="https://github.com/benda18"><img src="github_logo.png" , height="17"></a>
-            <a href="https://www.nytimes.com/2017/10/06/technology/aol-aim-shut-down.html" target="blank"><img
-                    src="aol_logo.jpg" , height="17"></a>
-        </p>
-    </div>
-    <div class="splash_body">
-        <h3>Sudoku Generator</h3>
-        <p>insert description</p>
-        <script src="sg.js"></script>
-        <!-- Input Your Letters: <input type="text" id="input_ltrs" value="alsvdrk"><br>
-        Output the Words: <input type="text" id="output_ltrs" value=":-)"><br>
-        <button onclick="find_scrab_words()">Find some words</button>
-        <script class="scrb_ltrs_scr">
-        function find_scrab_words() {
-                var twl06 = ["aa", "aah", "aahed", "aahing", "aahs", "aal", "aalii", "aaliis", "aals", "aardvark", "aardvarks", "aardwolf", "aardwolves", "aargh", "aarrgh", "aarrghh", "aas", "aasvogel", "aasvogels", "ab", "aba", "abaca", "abacas", "abaci", "aback", "abacterial", "abacus", "abacuses", "abaft", "abaka", "abakas", "abalone", "abalones", "abamp", "abampere", "abamperes", "abamps", "abandon", "abandoned", "abandoner", "abandoners", "abandoning", "abandonment", "abandonments", "abandons", "abapical", "abas", "abase", "abased", "abasedly", "abasement", "abasements", "abaser", "abasers", "abases", "abash", "abashed", "abashedly", "abashes", "abashing", "abashment", "abashments", "abasia", "abasias", "abasing", "abatable", "abate", "abated", "abatement", "abatements", "abater", "abaters", "abates", "abating", "abatis", "abatises", "abator", "abators", "abattis", "abattises", "abattoir", "abattoirs", "abaxial", "abaxile", "abaya", "abayas", "abba", "abbacies", "abbacy", "abbas", "abbatial", "abbe", "abbes", "abbess", "abbesses", "abbey", "abbeys", "abbot", "abbotcies", "abbotcy"]
-                var input_letters = document.getElementById("input_ltrs").value;
-                var filtered_twl06 = new Array(null);
-                for (i = 0; i < twl06.length; i++) {
-                    for (l = 0; l < input_letters.length; l++) {
-                        var has_ltr = twl06[i].indexOf(input_letters[l]);
-                        if (has_ltr >= 0) {
-                            filtered_twl06[filtered_twl06.length] = twl06[i];
-                        }
-                    }
-                }
-               var an_arr = ["a", "b", "c", "z", "f"];
-               var another_arr = ["z", "g"];
-               var io_ar12 = an_arr.indexOf(another_arr[0]);
-               document.write(io_ar12);
-            } 
-        </script> -->
-    </div>
-</body>
-
+    <script src="sg.js"></script>
+  </body>
 </html>

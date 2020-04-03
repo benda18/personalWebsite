@@ -255,6 +255,9 @@ div {
 script {
 	display: block;
 }
+.scr_val_area {
+	display: none;
+}
 
 /* ##################### */
 

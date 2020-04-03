@@ -55,6 +55,21 @@
       <div class="sudo"><input type="number" id="A8" size=1 value=8></div>
       <div class="sudo"><input type="number" id="A9" size=1 value=9></div>
     </div>
+    <script class="scr_val_area">
+      function validateCell() {
+        var cell_a1 = document.getElementById("A1").value;
+        var cell_a2 = document.getElementById("A2").value;
+        var cell_a3 = document.getElementById("A3").value;
+        var cell_a4 = document.getElementById("A4").value;
+        var cell_a5 = document.getElementById("A5").value;
+        var cell_a6 = document.getElementById("A6").value;
+        var cell_a7 = document.getElementById("A7").value;
+        var cell_a8 = document.getElementById("A8").value;
+        var cell_a9 = document.getElementById("A9").value;
+        let area_a_vals = [cell_a1, cell_a2, cell_a3, cell_a4, cell_a5,
+          cell_a6, cell_a7, cell_a8, cell_a9]
+      }
+    </script>
     <!-- Type your play:<input type="text" id="my_rps" size = "25" value="">  
           <button onclick="rockPaperScissors()">Click to Play</button><br>
           See her play: <input type="text" id="her_rps" size = "25" value="???"><br>

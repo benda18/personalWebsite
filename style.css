@@ -3,7 +3,8 @@
 	--univ_top: 8px;
 	--univ_left: 8px;
 	--univ_wid: 450px; /* 45vw; */
-	--univ_wid_min: 600px;
+	/* --univ_wid_min: 600px; */
+	--univ_wid_min: 850px;
 	--univ_wid_max: 850px;
 	--univ_ht: 80vh; 
 	--scndry_wid: 600px; 

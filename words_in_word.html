@@ -54,26 +54,26 @@
         <script class="scrb_ltrs_scr">
 
             function find_scrab_words() {
-                var twl06 = require("twl06");
-                var text = twl06.readFileSync("./TWL06.txt").toString('utf-8');
+                var fry1k = require("fry1k");
+                var text = fry1k.readFileSync("./fry1000.txt").toString('utf-8');
                 var textByLine = text.split("\n")
-                //var twl06 = ["aa", "aah", "aahed", "aahing", "aahs", "aal", "aalii", "aaliis", "aals", "aardvark", "aardvarks", "aardwolf", "aardwolves", "aargh", "aarrgh", "aarrghh", "aas", "aasvogel", "aasvogels", "ab", "aba", "abaca", "abacas", "abaci", "aback", "abacterial", "abacus", "abacuses", "abaft", "abaka", "abakas", "abalone", "abalones", "abamp", "abampere", "abamperes", "abamps", "abandon", "abandoned", "abandoner", "abandoners", "abandoning", "abandonment", "abandonments", "abandons", "abapical", "abas", "abase", "abased", "abasedly", "abasement", "abasements", "abaser", "abasers", "abases", "abash", "abashed", "abashedly", "abashes", "abashing", "abashment", "abashments", "abasia", "abasias", "abasing", "abatable", "abate", "abated", "abatement", "abatements", "abater", "abaters", "abates", "abating", "abatis", "abatises", "abator", "abators", "abattis", "abattises", "abattoir", "abattoirs", "abaxial", "abaxile", "abaya", "abayas", "abba", "abbacies", "abbacy", "abbas", "abbatial", "abbe", "abbes", "abbess", "abbesses", "abbey", "abbeys", "abbot", "abbotcies", "abbotcy"]
+                document.write(textByLine);
                 var input_letters = document.getElementById("input_ltrs").value;
                 //STEP 1: REDUCE ARRAY BASED ON CONTAINING ANY input_letters
                 // ~create array of input letters
-                var filtered_twl06 = new Array(null);
-                // ~for each word in twl06
-                for (i = 0; i < twl06.length; i++) {
+                var filtered_fry1k = new Array(null);
+                // ~for each word in fry1k
+                for (i = 0; i < fry1k.length; i++) {
                     // ~for each letter in input_letters
                     for (l = 0; l < input_letters.length; l++) {
-                        var has_ltr = twl06[i].indexOf(input_letters[l]);
+                        var has_ltr = fry1k[i].indexOf(input_letters[l]);
                         // ~if word has letter
                         if (has_ltr >= 0) {
-                            filtered_twl06[filtered_twl06.length] = twl06[i];
+                            filtered_fry1k[filtered_fry1k.length] = fry1k[i];
                         }
                     }
                 }
-                //document.write(filtered_twl06);
+                //document.write(filtered_fry1k);
 
                 //STEP 2: REDUCE ARRAY BASED ON LETTERS ONLY IN input_letters;
                 var an_arr = ["a", "b", "c", "z", "f"];

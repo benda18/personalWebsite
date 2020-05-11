@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>SCRABBLE HELPER</title>
+    <title>FIND WORDS IN WORD</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +17,7 @@
             </a>
         </div>
         <script id="demo2">
-            var my_text = "ScrabbleHelper";
+            var my_text = "WordsInWord";
             document.getElementById("demo2").innerHTML = my_text.repeat(200);
         </script>
         <p id="demo"></p>
@@ -42,10 +42,11 @@
     <div class="splash_body">
 
         <!-- <div class="footer"> -->
-        <h3>Scrabble Helper</h3>
-        <p>Input the letters you have, and any letters you want to play off, and this script will return all words from
-            the Scrabble Tournament Word List (TWL06) that can be played by those letters. </p>
-        Input Your Letters: <input type="text" id="input_ltrs" value="alsvdrk"><br>
+        <h3>Find Words in Word</h3>
+        <p>Inspired by a homework assignment that my son was given in first grade, this tool helps identify all of the words 
+            from a given dictionary dataset that can be constructed from a given word.  
+        </p>
+        Input Your Word: <input type="text" id="input_ltrs" value="alsvdrk"><br>
         Output the Words: <input type="text" id="output_ltrs" value=":-)"><br>
         <!-- Dice roll result: <input type="text" id="roll_output" value="???"><br><br> -->
         <button onclick="find_scrab_words()">Find some words</button>
